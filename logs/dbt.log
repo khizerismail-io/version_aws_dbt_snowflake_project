@@ -34,3 +34,14 @@ click.exceptions.Abort
 [0m15:59:29.843573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198414EEED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198453454C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198453B7A70>]}
 [0m15:59:29.844571 [debug] [MainThread]: Flushing usage events
 [0m15:59:30.823285 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:35:53.792251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC9D5ACC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC81F4F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019CC9D5B200>]}
+
+
+============================== 16:35:53.805708 | d323e03e-e07f-4d5e-baf3-0a7414d8ffaf ==============================
+[0m16:35:53.805708 [info ] [MainThread]: Running with dbt=1.12.6
+[0m16:35:53.808879 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'invocation_command': 'dbt init', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:38:13.836140 [debug] [MainThread]: Starter project path: E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m16:38:13.943641 [info ] [MainThread]: Setting up your profile.
+[0m16:38:49.568342 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:38:49.570974 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:38:49.570974 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
