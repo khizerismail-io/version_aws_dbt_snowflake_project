@@ -1,0 +1,36 @@
+[0m15:59:18.966146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001984371C110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198414EEED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019842AB5970>]}
+
+
+============================== 15:59:18.966146 | fd1adfbc-777e-41b6-8098-d2d9549ebaf9 ==============================
+[0m15:59:18.966146 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:59:18.966146 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init .', 'log_path': 'logs'}
+[0m15:59:19.002486 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\USER\.dbt
+[0m15:59:29.838603 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m15:59:29.841571 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 340, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\dbt\task\init.py", line 281, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\click\termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "E:\Snowflake\AWS_DBT_Snowflake\.venv\Lib\site-packages\click\termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m15:59:29.843573 [debug] [MainThread]: Command `dbt init` failed at 15:59:29.842574 after 11.02 seconds
+[0m15:59:29.843573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198414EEED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198453454C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198453B7A70>]}
+[0m15:59:29.844571 [debug] [MainThread]: Flushing usage events
+[0m15:59:30.823285 [debug] [MainThread]: An error was encountered while trying to flush usage events
